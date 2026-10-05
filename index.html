@@ -2,199 +2,28 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Verona Texts</title>
 
-    <style>
-
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff5f8;
-            color: #3b2530;
-        }
-
-        h1 {
-            font-size: 60px;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        h3 {
-            font-size: 22px;
-        }
-
-        nav {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            background-color: white;
-            padding: 20px;
-        }
-
-        nav a {
-            text-align: center;
-            text-decoration: none;
-            color: #3b2530;
-        }
-
-        .hero {
-            text-align: center;
-            background-color: #f5d6df;
-            padding: 70px 20px;
-        }
-
-        button {
-            background-color: #9f3f5f;
-            color: white;
-            border: none;
-            padding: 10px 18px;
-            margin: 5px;
-        }
-
-        .character-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            width: 80%;
-            margin: auto;
-        }
-
-        .character-card {
-            background-color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .character-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
-        .phone {
-            width: 350px;
-            max-width: 85%;
-            margin: 40px auto;
-            background-color: white;
-            border: 4px solid black;
-            padding: 20px;
-        }
-
-        .message-left {
-            background-color: #dddddd;
-            padding: 10px;
-            width: 65%;
-        }
-
-        .message-right {
-            background-color: #9f3f5f;
-            color: white;
-            padding: 10px;
-            width: 65%;
-            margin-left: auto;
-        }
-
-        .people-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 20px;
-            width: 80%;
-            margin: auto;
-        }
-
-        .person {
-            text-align: center;
-        }
-
-        .person img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .about {
-            margin-top: 50px;
-            background-color: #3b2530;
-            color: white;
-            text-align: center;
-            padding: 50px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-        }
-
-        #romeoChat {
-            display: none;
-        }
-
-        #secretMessage {
-            display: none;
-            background-color: #fff0b8;
-            padding: 10px;
-        }
-
-        .dark {
-            background-color: #222222;
-            color: white;
-        }
-
-        .dark .hero {
-            background-color: #4b2e38;
-        }
-
-        .dark .character-card {
-            background-color: #444444;
-        }
-
-        .dark .phone {
-            background-color: #333333;
-        }
-
-        @media screen and (max-width: 700px) {
-
-            nav {
-                grid-template-columns: 1fr;
-            }
-
-            .character-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .people-grid {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: 45px;
-            }
-
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
 
-        <nav>
-
+        <nav class="nav-grid">
             <a href="#home">Home</a>
             <a href="#characters">Characters</a>
             <a href="#texts">Texts</a>
             <a href="#about">About</a>
-
         </nav>
 
     </header>
+
 
     <main>
 
@@ -253,34 +82,58 @@
 
                 <div id="julietChat">
 
-                    <p class="message-left">Romeo: hey</p>
+                    <p class="message-left">
+                        Romeo: hey
+                    </p>
 
-                    <p class="message-right">Juliet: it is literally 2am</p>
+                    <p class="message-right">
+                        Juliet: it is literally 2am
+                    </p>
 
-                    <p class="message-left">Romeo: look outside</p>
+                    <p class="message-left">
+                        Romeo: look outside
+                    </p>
 
-                    <p class="message-right">Juliet: absolutely not</p>
+                    <p class="message-right">
+                        Juliet: absolutely not
+                    </p>
 
-                    <p class="message-left">Romeo: balcony</p>
+                    <p class="message-left">
+                        Romeo: balcony
+                    </p>
 
-                    <p class="message-right">Juliet: you are insane</p>
+                    <p class="message-right">
+                        Juliet: you are insane
+                    </p>
 
                 </div>
 
 
                 <div id="romeoChat">
 
-                    <p class="message-left">Mercutio: where are you</p>
+                    <p class="message-left">
+                        Mercutio: where are you
+                    </p>
 
-                    <p class="message-right">Romeo: busy</p>
+                    <p class="message-right">
+                        Romeo: busy
+                    </p>
 
-                    <p class="message-left">Mercutio: with who</p>
+                    <p class="message-left">
+                        Mercutio: with who
+                    </p>
 
-                    <p class="message-right">Romeo: nobody</p>
+                    <p class="message-right">
+                        Romeo: nobody
+                    </p>
 
-                    <p class="message-left">Mercutio: is it a Capulet</p>
+                    <p class="message-left">
+                        Mercutio: is it a Capulet
+                    </p>
 
-                    <p class="message-right">Romeo: maybe</p>
+                    <p class="message-right">
+                        Romeo: maybe
+                    </p>
 
                 </div>
 
@@ -289,14 +142,17 @@
                     Unsent: This is probably a terrible idea.
                 </p>
 
-                <button id="secretButton">Show Secret Message</button>
+
+                <button id="secretButton">
+                    Show Secret Message
+                </button>
 
             </div>
 
         </section>
 
 
-        <section>
+        <section class="people-section">
 
             <h2>People in Verona</h2>
 
@@ -353,62 +209,7 @@
     </footer>
 
 
-    <script>
-
-        let romeoButton = document.querySelector("#romeoButton");
-        let julietButton = document.querySelector("#julietButton");
-        let romeoChat = document.querySelector("#romeoChat");
-        let julietChat = document.querySelector("#julietChat");
-        let chatTitle = document.querySelector("#chatTitle");
-
-        let secretButton = document.querySelector("#secretButton");
-        let secretMessage = document.querySelector("#secretMessage");
-
-        let darkButton = document.querySelector("#darkButton");
-
-
-        romeoButton.addEventListener("click", function () {
-
-            romeoChat.style.display = "block";
-            julietChat.style.display = "none";
-
-            chatTitle.innerHTML = "Romeo's Messages";
-
-        });
-
-
-        julietButton.addEventListener("click", function () {
-
-            julietChat.style.display = "block";
-            romeoChat.style.display = "none";
-
-            chatTitle.innerHTML = "Juliet's Messages";
-
-        });
-
-
-        secretButton.addEventListener("click", function () {
-
-            if (secretMessage.style.display == "block") {
-
-                secretMessage.style.display = "none";
-
-            } else {
-
-                secretMessage.style.display = "block";
-
-            }
-
-        });
-
-
-        darkButton.addEventListener("click", function () {
-
-            document.body.classList.toggle("dark");
-
-        });
-
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
