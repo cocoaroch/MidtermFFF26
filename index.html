@@ -2,23 +2,198 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Verona Texts</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f8;
+            color: #3b2530;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            background-color: white;
+            padding: 20px;
+        }
+
+        nav a {
+            text-align: center;
+            text-decoration: none;
+            color: #3b2530;
+        }
+
+        .hero {
+            text-align: center;
+            background-color: #f5d6df;
+            padding: 70px 20px;
+        }
+
+        button {
+            background-color: #9f3f5f;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            margin: 5px;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .character-card {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .character-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .phone {
+            width: 350px;
+            max-width: 85%;
+            margin: 40px auto;
+            background-color: white;
+            border: 4px solid black;
+            padding: 20px;
+        }
+
+        .message-left {
+            background-color: #dddddd;
+            padding: 10px;
+            width: 65%;
+        }
+
+        .message-right {
+            background-color: #9f3f5f;
+            color: white;
+            padding: 10px;
+            width: 65%;
+            margin-left: auto;
+        }
+
+        .people-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .person {
+            text-align: center;
+        }
+
+        .person img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .about {
+            margin-top: 50px;
+            background-color: #3b2530;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #romeoChat {
+            display: none;
+        }
+
+        #secretMessage {
+            display: none;
+            background-color: #fff0b8;
+            padding: 10px;
+        }
+
+        .dark {
+            background-color: #222222;
+            color: white;
+        }
+
+        .dark .hero {
+            background-color: #4b2e38;
+        }
+
+        .dark .character-card {
+            background-color: #444444;
+        }
+
+        .dark .phone {
+            background-color: #333333;
+        }
+
+        @media screen and (max-width: 700px) {
+
+            nav {
+                grid-template-columns: 1fr;
+            }
+
+            .character-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .people-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 45px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
     <header>
-        <nav class="nav-grid">
+
+        <nav>
+
             <a href="#home">Home</a>
             <a href="#characters">Characters</a>
             <a href="#texts">Texts</a>
             <a href="#about">About</a>
+
         </nav>
+
     </header>
 
     <main>
@@ -27,9 +202,9 @@
 
             <h1>VERONA</h1>
 
-            <p>A modern Romeo and Juliet texting story.</p>
+            <p>Romeo and Juliet, but with text messages.</p>
 
-            <button id="modeButton">Dark Mode</button>
+            <button id="darkButton">Dark Mode</button>
 
         </section>
 
@@ -46,7 +221,7 @@
 
                     <h3>Romeo</h3>
 
-                    <p>Montague. Dramatic. In love.</p>
+                    <p>Dramatic, romantic, and always somewhere he should not be.</p>
 
                     <button id="romeoButton">Choose Romeo</button>
 
@@ -59,7 +234,7 @@
 
                     <h3>Juliet</h3>
 
-                    <p>Capulet. Secretive. Also in love.</p>
+                    <p>Smart, secretive, and definitely ignoring her parents.</p>
 
                     <button id="julietButton">Choose Juliet</button>
 
@@ -78,42 +253,41 @@
 
                 <div id="julietChat">
 
-                    <p class="left-message">Romeo: hey</p>
+                    <p class="message-left">Romeo: hey</p>
 
-                    <p class="right-message">Juliet: Romeo it is 2am</p>
+                    <p class="message-right">Juliet: it is literally 2am</p>
 
-                    <p class="left-message">Romeo: look outside</p>
+                    <p class="message-left">Romeo: look outside</p>
 
-                    <p class="right-message">Juliet: absolutely not</p>
+                    <p class="message-right">Juliet: absolutely not</p>
 
-                    <p class="left-message">Romeo: balcony</p>
+                    <p class="message-left">Romeo: balcony</p>
 
-                    <p class="right-message">Juliet: my parents will kill you</p>
-
-                </div>
-
-
-                <div id="romeoChat" class="hidden">
-
-                    <p class="left-message">Mercutio: where are you</p>
-
-                    <p class="right-message">Romeo: busy</p>
-
-                    <p class="left-message">Mercutio: with who</p>
-
-                    <p class="right-message">Romeo: nobody</p>
-
-                    <p class="left-message">Mercutio: is it a Capulet</p>
-
-                    <p class="right-message">Romeo: maybe</p>
+                    <p class="message-right">Juliet: you are insane</p>
 
                 </div>
 
 
-                <p id="secretMessage" class="hidden secret">
-                    Unsent: this is probably a terrible idea.
+                <div id="romeoChat">
+
+                    <p class="message-left">Mercutio: where are you</p>
+
+                    <p class="message-right">Romeo: busy</p>
+
+                    <p class="message-left">Mercutio: with who</p>
+
+                    <p class="message-right">Romeo: nobody</p>
+
+                    <p class="message-left">Mercutio: is it a Capulet</p>
+
+                    <p class="message-right">Romeo: maybe</p>
+
+                </div>
+
+
+                <p id="secretMessage">
+                    Unsent: This is probably a terrible idea.
                 </p>
-
 
                 <button id="secretButton">Show Secret Message</button>
 
@@ -122,25 +296,36 @@
         </section>
 
 
-        <section class="people-section">
+        <section>
 
-            <h2>Other People in Verona</h2>
+            <h2>People in Verona</h2>
 
             <div class="people-grid">
 
                 <div class="person">
+
                     <img src="images/mercutio.jpg" alt="Mercutio">
+
                     <p>Mercutio</p>
+
                 </div>
 
+
                 <div class="person">
+
                     <img src="images/nurse.jpg" alt="Nurse">
+
                     <p>Nurse</p>
+
                 </div>
 
+
                 <div class="person">
+
                     <img src="images/tybalt.jpg" alt="Tybalt">
+
                     <p>Tybalt</p>
+
                 </div>
 
             </div>
@@ -153,8 +338,7 @@
             <h2>About</h2>
 
             <p>
-                This website imagines what Romeo and Juliet's conversations
-                could look like if they had phones and text messages.
+                This website imagines Romeo and Juliet as a modern texting story.
             </p>
 
         </section>
@@ -169,7 +353,62 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script>
+
+        let romeoButton = document.querySelector("#romeoButton");
+        let julietButton = document.querySelector("#julietButton");
+        let romeoChat = document.querySelector("#romeoChat");
+        let julietChat = document.querySelector("#julietChat");
+        let chatTitle = document.querySelector("#chatTitle");
+
+        let secretButton = document.querySelector("#secretButton");
+        let secretMessage = document.querySelector("#secretMessage");
+
+        let darkButton = document.querySelector("#darkButton");
+
+
+        romeoButton.addEventListener("click", function () {
+
+            romeoChat.style.display = "block";
+            julietChat.style.display = "none";
+
+            chatTitle.innerHTML = "Romeo's Messages";
+
+        });
+
+
+        julietButton.addEventListener("click", function () {
+
+            julietChat.style.display = "block";
+            romeoChat.style.display = "none";
+
+            chatTitle.innerHTML = "Juliet's Messages";
+
+        });
+
+
+        secretButton.addEventListener("click", function () {
+
+            if (secretMessage.style.display == "block") {
+
+                secretMessage.style.display = "none";
+
+            } else {
+
+                secretMessage.style.display = "block";
+
+            }
+
+        });
+
+
+        darkButton.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark");
+
+        });
+
+    </script>
 
 </body>
 
