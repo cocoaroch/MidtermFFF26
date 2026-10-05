@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Verona is a modern Romeo and Juliet texting experience">
+    <meta name="author" content="Coco Aroch">
+    <meta name="keywords" content="Romeo, Juliet, Verona, texting, Shakespeare">
+
+    <title>Verona</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-grid">
+            <a href="#home" class="logo">VERONA</a>
+            <a href="#characters">Characters</a>
+            <a href="#messages">Messages</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <p class="small-title">LOVE. DRAMA. TERRIBLE COMMUNICATION.</p>
+
+            <h1>VERONA</h1>
+
+            <p class="hero-text">
+                Romeo and Juliet had one major problem: they didn't have iPhones.
+            </p>
+
+            <button id="modeButton">🌙 Midnight Mode</button>
+        </section>
+
+
+        <section id="characters" class="character-section">
+
+            <h2>Whose phone are you snooping through?</h2>
+
+            <div class="character-grid">
+
+                <article class="character-card">
+                    <img src="images/romeo.jpg" alt="Romeo Montague">
+
+                    <h3>Romeo Montague</h3>
+
+                    <p>Hopeless romantic. Professional balcony visitor.</p>
+
+                    <button id="romeoButton">View Romeo's Phone</button>
+                </article>
+
+
+                <article class="character-card">
+                    <img src="images/juliet.jpg" alt="Juliet Capulet">
+
+                    <h3>Juliet Capulet</h3>
+
+                    <p>Capulet daughter. Currently making questionable decisions.</p>
+
+                    <button id="julietButton">View Juliet's Phone</button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="messages" class="messages-section">
+
+            <h2 id="phoneTitle">Juliet's Phone</h2>
+
+            <div class="phone">
+
+                <div class="phone-header">
+
+                    <img id="profilePicture" src="images/romeo.jpg" alt="Profile picture">
+
+                    <div>
+                        <h3 id="contactName">Romeo 💙</h3>
+                        <p id="contactStatus">last seen outside a balcony</p>
+                    </div>
+
+                </div>
+
+
+                <div id="julietChat" class="chat">
+
+                    <div class="received">
+                        hey
+                    </div>
+
+                    <div class="sent">
+                        Romeo it is literally 2am
+                    </div>
+
+                    <div class="received">
+                        look outside
+                    </div>
+
+                    <div class="sent">
+                        absolutely not
+                    </div>
+
+                    <div class="received">
+                        balcony. now.
+                    </div>
+
+                    <div class="sent">
+                        my parents will literally kill you
+                    </div>
+
+                    <div class="received">
+                        worth it
+                    </div>
+
+                    <div class="sent">
+                        you are insane
+                    </div>
+
+                    <div class="received">
+                        insanely in love
+                    </div>
+
+                </div>
+
+
+                <div id="romeoChat" class="chat hidden">
+
+                    <div class="received">
+                        WHERE ARE YOU
+                    </div>
+
+                    <div class="sent">
+                        busy
+                    </div>
+
+                    <div class="received">
+                        with who
+                    </div>
+
+                    <div class="sent">
+                        don't worry about it
+                    </div>
+
+                    <div class="received">
+                        Romeo.
+                    </div>
+
+                    <div class="received">
+                        please tell me it isn't a Capulet
+                    </div>
+
+                    <div class="sent">
+                        okay then I won't tell you
+                    </div>
+
+                    <div class="received">
+                        YOU ARE SO ANNOYING
+                    </div>
+
+                </div>
+
+
+                <div id="secretMessage" class="secret hidden">
+                    Romeo... there's something I need to tell you.
+                </div>
+
+
+                <button id="revealButton" class="reveal-button">
+                    Reveal Unsent Message
+                </button>
+
+
+                <div class="text-box">
+                    <input id="messageInput" type="text" placeholder="Text Message">
+                    <button id="sendButton">Send</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contacts-section">
+
+            <h2>Recent Contacts</h2>
+
+            <div class="contact-grid">
+
+                <article class="contact">
+                    <img src="images/mercutio.jpg" alt="Mercutio">
+                    <h3>Mercutio</h3>
+                    <p>17 unread messages</p>
+                </article>
+
+                <article class="contact">
+                    <img src="images/nurse.jpg" alt="Juliet's Nurse">
+                    <h3>Nurse</h3>
+                    <p>Calling...</p>
+                </article>
+
+                <article class="contact">
+                    <img src="images/tybalt.jpg" alt="Tybalt">
+                    <h3>Tybalt</h3>
+                    <p>Blocked</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section id="about" class="about">
+
+            <h2>About Verona</h2>
+
+            <p>
+                Verona reimagines Romeo and Juliet as if the characters had phones,
+                group chats, and very bad texting habits. Choose a character and
+                discover the drama from their side of the story.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>VERONA © 2026 | Created by Coco Aroch</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
