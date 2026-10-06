@@ -1,19 +1,19 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff5f8;
+    background-color: #fff7f9;
     color: #3b2530;
 }
 
 h1 {
     font-size: 60px;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 h2 {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 h3 {
@@ -25,7 +25,7 @@ p {
 }
 
 button {
-    background-color: #9f3f5f;
+    background-color: #ad365f;
     color: white;
     border: none;
     padding: 10px 18px;
@@ -33,8 +33,11 @@ button {
 }
 
 button:hover {
-    background-color: #7d304b;
+    background-color: #872846;
 }
+
+
+/* NAVIGATION */
 
 .nav-grid {
     display: grid;
@@ -45,57 +48,76 @@ button:hover {
 
 .nav-grid a {
     text-align: center;
-    color: #3b2530;
     text-decoration: none;
+    color: #3b2530;
 }
+
+
+/* TOP SECTION */
 
 .hero {
     text-align: center;
-    background-color: #f5d6df;
+    background-color: #f3ced9;
     padding: 70px 20px;
 }
 
+.hero p {
+    font-size: 18px;
+}
+
+
+/* ROMEO AND JULIET */
+
 #characters {
-    padding: 20px 0 50px 0;
+    padding: 30px 0 60px 0;
 }
 
 .character-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    width: 80%;
-    max-width: 850px;
+    gap: 50px;
+    width: 75%;
+    max-width: 900px;
     margin: auto;
 }
 
 .character-box {
+    text-align: center;
     background-color: white;
     padding: 20px;
-    text-align: center;
 }
 
 .character-box img {
     width: 100%;
-    height: 280px;
+    height: 320px;
     object-fit: cover;
-    object-position: center top;
 }
 
+.character-box h3 {
+    margin-bottom: 15px;
+}
+
+
+/* MESSAGES */
+
 #messages {
-    padding: 20px 0 40px 0;
+    background-color: #f3ced9;
+    padding: 30px 0 60px 0;
 }
 
 .message-box {
+    background-color: white;
     width: 70%;
     max-width: 600px;
     margin: auto;
-    background-color: white;
     padding: 25px;
-    border: 2px solid #3b2530;
 }
 
-#julietMessages p,
-#romeoMessages p {
+.message-box h3 {
+    text-align: center;
+}
+
+.message-box p {
     background-color: #eeeeee;
     padding: 10px;
     margin: 10px 0;
@@ -107,20 +129,21 @@ button:hover {
 
 #secretMessage {
     display: none;
-    background-color: #fff0b8;
-    padding: 10px;
-    margin-top: 15px;
+    background-color: #fff1b8;
 }
 
+
+/* OTHER CHARACTERS */
+
 .other-section {
-    padding: 30px 0 60px 0;
+    padding: 20px 0 60px 0;
 }
 
 .other-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    width: 80%;
+    gap: 25px;
+    width: 75%;
     max-width: 900px;
     margin: auto;
 }
@@ -133,61 +156,69 @@ button:hover {
     width: 100%;
     height: 220px;
     object-fit: cover;
-    object-position: center top;
 }
+
+.person p {
+    font-weight: bold;
+}
+
+
+/* ABOUT */
 
 .about {
     background-color: #3b2530;
     color: white;
     text-align: center;
-    padding: 50px;
+    padding: 50px 20px;
 }
 
 .about h2 {
     margin-top: 0;
 }
 
+
+/* FOOTER */
+
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #22171c;
     color: white;
+    text-align: center;
+    padding: 15px;
 }
+
+
+/* MOBILE */
 
 @media screen and (max-width: 700px) {
 
     .nav-grid {
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 10px;
     }
 
     .character-grid {
         grid-template-columns: 1fr;
-        width: 90%;
+        width: 85%;
     }
 
     .other-grid {
         grid-template-columns: 1fr;
-        width: 90%;
-    }
-
-    .character-box img {
-        height: 250px;
-    }
-
-    .person img {
-        height: 250px;
+        width: 85%;
     }
 
     .message-box {
         width: 80%;
     }
 
-    h1 {
-        font-size: 45px;
+    .character-box img {
+        height: 280px;
     }
 
-    .hero {
-        padding: 50px 20px;
+    .person img {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 45px;
     }
 }
